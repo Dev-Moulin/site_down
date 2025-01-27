@@ -1,0 +1,24 @@
+@use '../css/abstracts/variables' as var;
+
+.cardGame {
+  background-color: var.$white-color;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: var.$spacing-medium;
+  margin-bottom: var.$spacing-medium;
+
+    h1 {
+        font-size: var.$font-size-h2;
+        margin-bottom: var.$spacing-small;
+    }
+    h2 {
+        font-size: var.$font-size-p;
+        color: var.$gray-color;
+        margin-bottom: var.$spacing-small;
+    }
+
+    a {
+        display: block;
+        margin-top: var.$spacing-medium;
+    }
+}

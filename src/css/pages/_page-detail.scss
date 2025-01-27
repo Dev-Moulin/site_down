@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as var;
+
+.page-detail {
+    padding: var.$spacing-large;
+    .article {
+      h1.title{
+        margin-bottom: var.$spacing-medium;
+       }
+       p.release-date {
+         margin-bottom: var.$spacing-small;
+         span {
+             font-weight: bold;
+         }
+       }
+       p.description {
+         line-height: var.$line-height-base;
+       }
+    }
+}

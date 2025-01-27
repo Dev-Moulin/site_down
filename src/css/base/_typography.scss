@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+body {
+  font-family: var.$main-font;
+  font-size: var.$font-size-base;
+  line-height: var.$line-height-base;
+}
+h1 {
+  font-size: var.$font-size-h1;
+  margin-bottom: var.$spacing-medium;
+}
+h2 {
+  font-size: var.$font-size-h2;
+  margin-bottom: var.$spacing-small;
+}
+p {
+    font-size: var.$font-size-p;
+    margin-bottom: var.$spacing-small;
+}
+a {
+    text-decoration: none;
+    color: var.$primary-color;
+  &:hover {
+    @include mix.link-hover;
+  }
+}

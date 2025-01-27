@@ -1,0 +1,31 @@
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+@use 'base/reset';
+@use 'base/typography';
+@use './card';
+@use 'pages/page-list';
+@use 'pages/page-detail';
+
+
+.cardGame {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Définir une largeur pour les cartes */
+    text-align: center;
+  }
+  
+  .card-image {
+    width: 100%; /* L'image prend toute la largeur de sa carte */
+    height: 200px; /* Fixer une hauteur pour toutes les images */
+    object-fit: cover; /* L'image sera rognée si nécessaire pour remplir la zone */
+    object-position: center; /* S'assurer que l'image est centrée */
+    margin-bottom: 10px;
+  }
+  
+  /* Pour afficher le bouton en dessous du texte */
+  .more-info {
+    margin-top: auto;
+  }
