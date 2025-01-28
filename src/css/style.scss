@@ -5,6 +5,8 @@
 @use './card';
 @use 'pages/page-list';
 @use 'pages/page-detail';
+@use 'components/loader';
+@use 'components/pacman';
 
 
 .cardGame {
@@ -29,3 +31,7 @@
   .more-info {
     margin-top: auto;
   }
+
+
+
+ 

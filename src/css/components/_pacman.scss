@@ -1,0 +1,12 @@
+$primaryClr: #fed75a; // Adjust this value to change the color
+$pacman-size: 70px;
+
+.pac-man {
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 5em;
+  border-radius: 100em 100em 0 0;
+  background: $primaryClr;
+  transform-origin: bottom;
+  animation: eating-top 0.5s infinite;
+}
